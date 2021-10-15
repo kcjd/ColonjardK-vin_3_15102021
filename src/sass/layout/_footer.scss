@@ -1,0 +1,54 @@
+.footer {
+  background-color: $clr-neutral-800;
+  padding-block: $spacer-700;
+
+  @include breakpoint('lg') {
+    padding-block: $spacer-800;
+  }
+
+  &__content {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-500;
+    color: $clr-neutral-100;
+
+    @include breakpoint('lg') {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    font-family: $ff-cursive;
+    font-size: $fs-600;
+    font-weight: 400;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-200;
+
+    @include breakpoint('lg') {
+      flex-direction: row;
+      gap: $spacer-800;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: $spacer-200;
+  }
+
+  &__link--strong {
+    font-weight: 500;
+  }
+
+  &__link-icon {
+    @extend %icon-wrapper;
+    font-size: $fs-200;
+  }
+}

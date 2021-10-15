@@ -1,0 +1,18 @@
+@mixin breakpoint($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+@mixin container {
+  width: 90vw;
+  margin-inline: auto;
+
+  @include breakpoint('xl') {
+    width: 76vw;
+  }
+
+  @include breakpoint('xxl') {
+    width: 64vw;
+  }
+}

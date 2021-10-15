@@ -1,0 +1,16 @@
+.header {
+  box-shadow: $box-shadow-200;
+  padding-block: $spacer-400;
+
+  &__content {
+    @include container;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__logo {
+    font-family: $ff-cursive;
+    font-size: $fs-900;
+    font-weight: 400;
+  }
+}
