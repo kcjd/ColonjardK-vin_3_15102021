@@ -1,0 +1,28 @@
+// Typography
+$ff-body: 'Roboto', sans-serif;
+$ff-heading: 'Shrikhand', cursive;
+
+$fs-400: 1rem;
+
+// Colors
+$clr-primary-100: hsl(267 100% 96%);
+$clr-primary-400: hsl(267 66% 60%);
+
+$clr-secondary-400: hsl(317 100% 74%);
+
+$clr-tertiary-400: hsl(165 56% 74%);
+
+$clr-neutral-100: hsl(0 0% 100%);
+$clr-neutral-200: hsl(0 0% 97%);
+$clr-neutral-300: hsl(0 0% 93%);
+$clr-neutral-700: hsl(0 0% 49%);
+$clr-neutral-800: hsl(0 0% 21%);
+$clr-neutral-900: hsl(0 0% 6%);
+
+// Breakpoints
+$breakpoints: (
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  'xxl': 1920px,
+);
