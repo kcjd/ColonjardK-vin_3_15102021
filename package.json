@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./src/sass/main.scss:./dist/style/style.css --style compressed",
-    "sass:watch": "sass --watch ./src/sass/main.scss:./dist/style/style.css --style compressed",
-    "prefix": "postcss ./dist/style/style.css --use autoprefixer -d ./dist/style/"
+    "sass": "sass ./src/sass/main.scss:./style/style.css --style compressed",
+    "sass:watch": "sass --watch ./src/sass/main.scss:./style/style.css --style compressed",
+    "prefix": "postcss ./dist/style/style.css --use autoprefixer -d ./style/"
   },
   "author": "",
   "license": "ISC",
