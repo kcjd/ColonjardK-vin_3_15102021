@@ -13,6 +13,7 @@ $spacer-500: 1.125rem;
 $spacer-600: 1.5rem;
 $spacer-700: 2rem;
 $spacer-800: 3rem;
+$spacer-900: 4rem;
 
 // Typography
 $ff-sans: 'Roboto', sans-serif;
@@ -20,7 +21,9 @@ $ff-cursive: 'Shrikhand', cursive;
 
 $fs-200: 0.75rem;
 $fs-400: 1rem;
+$fs-500: 1.125rem;
 $fs-600: 1.25rem;
+$fs-700: 1.5rem;
 $fs-900: 2rem;
 
 // Colors
@@ -38,7 +41,12 @@ $clr-neutral-700: hsl(0 0% 49%);
 $clr-neutral-800: hsl(0 0% 21%);
 $clr-neutral-900: hsl(0 0% 6%);
 
-// Shadows
-$clr-shadow: hsl(0 0% 40% / 0.075);
+// Gradients
+$gradient: linear-gradient(175deg, $clr-secondary-400, $clr-primary-400);
 
-$box-shadow-200: 0px 1px 1px $clr-shadow, 0px 2px 2px $clr-shadow, 0px 4px 4px $clr-shadow;
+// Shadows
+$box-shadow-200: 0px 1px 1px hsl(0 0% 40% / 0.075), 0px 2px 2px hsl(0 0% 40% / 0.075), 0px 4px 4px hsl(0 0% 40% / 0.075);
+$box-shadow-600: 0px 2px 2px hsl(0 0% 40% / 0.2), 0px 4px 4px hsl(0 0% 40% / 0.2), 0px 8px 8px hsl(0 0% 40% / 0.2);
+
+// Border radius
+$br-900: 9999px;

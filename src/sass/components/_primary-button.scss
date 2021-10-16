@@ -1,0 +1,40 @@
+.primary-button {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  padding: $spacer-400 $spacer-600;
+  border-radius: $br-900;
+  background-color: $clr-primary-400;
+  color: $clr-neutral-100;
+  font-weight: 500;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+  }
+
+  &::before {
+    background-image: $gradient;
+    transition: filter 0.25s;
+  }
+
+  &::after {
+    box-shadow: $box-shadow-600;
+    opacity: 0.6;
+    transition: opacity 0.25s;
+  }
+
+  &:hover {
+    &::before {
+      filter: brightness(1.1);
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}

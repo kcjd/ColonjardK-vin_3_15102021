@@ -1,0 +1,20 @@
+.hero {
+  padding-block: $spacer-900;
+  background-color: $clr-neutral-200;
+
+  &__container {
+    @include container;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %title-primary;
+    margin-bottom: $spacer-500;
+  }
+
+  &__intro-text {
+    color: $clr-neutral-800;
+    font-size: $fs-500;
+    margin-bottom: $spacer-700;
+  }
+}

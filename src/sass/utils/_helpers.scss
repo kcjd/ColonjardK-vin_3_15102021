@@ -3,6 +3,12 @@
   text-align: center;
 }
 
+%title-primary {
+  margin-bottom: $spacer-700;
+  font-size: $fs-700;
+  font-weight: 700;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

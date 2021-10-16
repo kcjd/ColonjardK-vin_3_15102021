@@ -6,7 +6,7 @@
     padding-block: $spacer-800;
   }
 
-  &__content {
+  &__container {
     @include container;
     display: flex;
     flex-direction: column;
