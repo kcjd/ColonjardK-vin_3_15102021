@@ -18,9 +18,19 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="header__content">
-        <h1 class="header__logo">ohmyfood</h1>
+      <div class="header__brand">
+        <div class="header__brand-container">
+          <h1 class="header__logo">ohmyfood</h1>
+        </div>
       </div>
+
+      <form class="header__search">
+        <label for="search-input">
+          <div class="visually-hidden">Localisation</div>
+          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+        </label>
+        <input type="search" id="search-input" placeholder="Paris, Belleville" class="header__search-input" />
+      </form>
     </header>
     <!-- HEADER -->
 
