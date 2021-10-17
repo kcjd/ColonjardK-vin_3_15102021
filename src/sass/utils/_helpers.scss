@@ -10,6 +10,12 @@
   box-shadow: $box-shadow-400;
 }
 
+%card-title {
+  margin-bottom: $spacer-100;
+  font-size: $fs-500;
+  font-weight: 500;
+}
+
 %title-primary {
   margin-bottom: $spacer-700;
   font-size: $fs-700;

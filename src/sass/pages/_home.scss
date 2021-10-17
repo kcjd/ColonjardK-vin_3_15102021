@@ -20,6 +20,8 @@
 }
 
 .walkthrough {
+  $self: &;
+
   padding-block: $spacer-900;
 
   &__container {
@@ -34,9 +36,43 @@
     display: grid;
     gap: $spacer-600;
     counter-reset: walkthrough;
+  }
 
-    @include breakpoint('lg') {
+  @include breakpoint('lg') {
+    #{$self}__list {
       grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.restaurants {
+  $self: &;
+
+  padding-block: $spacer-900;
+  background-color: $clr-neutral-200;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    @extend %title-primary;
+  }
+
+  &__list {
+    display: grid;
+    gap: $spacer-600;
+  }
+
+  @include breakpoint('md') {
+    #{$self}__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include breakpoint('lg') {
+    #{$self}__list {
+      gap: $spacer-700;
     }
   }
 }
