@@ -1,0 +1,61 @@
+@use 'sass:math';
+
+.walkthrough-card {
+  $self: &;
+  $label-size: 1.75em;
+
+  @extend %card;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: $spacer-500;
+  margin-left: math.div($label-size, 2);
+  padding: $spacer-700;
+  background-color: $clr-neutral-200;
+  font-weight: 500;
+  cursor: pointer;
+  counter-increment: walkthrough;
+
+  &__icon {
+    @extend %icon-wrapper;
+    color: $clr-neutral-700;
+    font-size: $fs-600;
+  }
+
+  &::before {
+    content: counter(walkthrough);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: $label-size;
+    height: $label-size;
+    border-radius: 50%;
+    background-color: $clr-primary-400;
+    color: $clr-neutral-100;
+    text-align: center;
+    line-height: $label-size;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background-color: $clr-primary-100;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+
+    #{$self}__icon {
+      color: $clr-primary-400;
+    }
+  }
+}

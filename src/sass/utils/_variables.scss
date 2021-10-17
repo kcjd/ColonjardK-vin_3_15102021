@@ -46,7 +46,9 @@ $gradient: linear-gradient(175deg, $clr-secondary-400, $clr-primary-400);
 
 // Shadows
 $box-shadow-200: 0px 1px 1px hsl(0 0% 40% / 0.075), 0px 2px 2px hsl(0 0% 40% / 0.075), 0px 4px 4px hsl(0 0% 40% / 0.075);
+$box-shadow-400: 0px 2px 2px hsl(0 0% 40% / 0.075), 0px 4px 4px hsl(0 0% 40% / 0.075), 0px 8px 8px hsl(0 0% 40% / 0.075);
 $box-shadow-600: 0px 2px 2px hsl(0 0% 40% / 0.2), 0px 4px 4px hsl(0 0% 40% / 0.2), 0px 8px 8px hsl(0 0% 40% / 0.2);
 
 // Border radius
+$br-400: 1.125rem;
 $br-900: 9999px;

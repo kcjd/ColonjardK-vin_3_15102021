@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+%card {
+  display: block;
+  border-radius: $br-400;
+  background-color: $clr-neutral-100;
+  box-shadow: $box-shadow-400;
+}
+
 %title-primary {
   margin-bottom: $spacer-700;
   font-size: $fs-700;

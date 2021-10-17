@@ -18,3 +18,25 @@
     margin-bottom: $spacer-700;
   }
 }
+
+.walkthrough {
+  padding-block: $spacer-900;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    @extend %title-primary;
+  }
+
+  &__list {
+    display: grid;
+    gap: $spacer-600;
+    counter-reset: walkthrough;
+
+    @include breakpoint('lg') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
