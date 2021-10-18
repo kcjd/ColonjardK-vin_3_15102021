@@ -1,6 +1,12 @@
-@mixin breakpoint($breakpoint) {
-  @media (min-width: map-get($breakpoints, $breakpoint)) {
-    @content;
+@mixin breakpoint($breakpoint, $direction: 'min') {
+  @if $direction == 'max' {
+    @media (max-width: map-get($breakpoints, $breakpoint) - 1) {
+      @content;
+    }
+  } @else if $direction == 'min' {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
   }
 }
 
