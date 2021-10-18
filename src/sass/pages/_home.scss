@@ -1,4 +1,6 @@
 .hero {
+  $self: &;
+
   padding-block: $spacer-900;
   background-color: $clr-neutral-200;
 
@@ -16,6 +18,14 @@
     color: $clr-neutral-800;
     font-size: $fs-500;
     margin-bottom: $spacer-700;
+  }
+
+  @include breakpoint('md', 'max') {
+    #{$self}__title,
+    #{$self}__intro-text {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
