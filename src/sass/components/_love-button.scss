@@ -1,0 +1,41 @@
+.love-button {
+  $self: &;
+
+  @extend %icon-button;
+  position: relative;
+  color: $clr-neutral-800;
+  font-size: $fs-700;
+
+  &__icon {
+    transition: clip-path 0.35s, opacity 0.35s, transform 0.35s;
+    transition-timing-function: $ease-in-400;
+  }
+
+  &__icon--back {
+    position: absolute;
+    inset: 0.125em;
+    background: $gradient;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform: scale(0.8);
+    clip-path: inset(100% 0 0 0);
+  }
+
+  &:hover {
+    #{$self}__icon {
+      transition-timing-function: $ease-out-400;
+    }
+
+    #{$self}__icon--front {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+
+    #{$self}__icon--back {
+      opacity: 1;
+      transform: scale(1);
+      clip-path: inset(0 0 0 0);
+    }
+  }
+}

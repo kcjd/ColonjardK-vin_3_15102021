@@ -3,6 +3,14 @@
   text-align: center;
 }
 
+%icon-button {
+  $size: 1.25em;
+
+  width: $size;
+  height: $size;
+  text-align: center;
+}
+
 %card {
   display: block;
   border-radius: $br-400;

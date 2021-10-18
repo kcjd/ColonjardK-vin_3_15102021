@@ -56,3 +56,7 @@ $box-shadow-600: 0px 2px 2px hsl(0 0% 40% / 0.2), 0px 4px 4px hsl(0 0% 40% / 0.2
 $br-100: 0.125rem;
 $br-400: 1.125rem;
 $br-900: 9999px;
+
+// Easings
+$ease-in-400: cubic-bezier(0.11, 0, 0.5, 0);
+$ease-out-400: cubic-bezier(0.5, 1, 0.89, 1);
