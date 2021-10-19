@@ -8,8 +8,19 @@
 
   &__brand-container {
     @include container;
+    position: relative;
     display: flex;
     justify-content: center;
+  }
+
+  &__button {
+    @extend %icon-button;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: $clr-neutral-800;
+    font-size: $fs-600;
+    transform: translateY(-50%);
   }
 
   &__logo {
