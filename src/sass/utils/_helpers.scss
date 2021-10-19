@@ -30,6 +30,31 @@
   font-weight: 700;
 }
 
+%title-secondary {
+  font-family: $ff-cursive;
+  font-size: $fs-800;
+  font-weight: 400;
+}
+
+%title-tertiary {
+  position: relative;
+  margin-bottom: $spacer-700;
+  color: $clr-neutral-800;
+  font-size: $fs-500;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -$spacer-200;
+    width: 2.5em;
+    height: 4px;
+    background-color: $clr-tertiary-400;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

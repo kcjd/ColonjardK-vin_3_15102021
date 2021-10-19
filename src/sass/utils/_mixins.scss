@@ -11,14 +11,14 @@
 }
 
 @mixin container {
-  width: 90vw;
+  max-width: 90vw;
   margin-inline: auto;
 
   @include breakpoint('xl') {
-    width: 76vw;
+    max-width: 76vw;
   }
 
   @include breakpoint('xxl') {
-    width: 64vw;
+    max-width: 64vw;
   }
 }

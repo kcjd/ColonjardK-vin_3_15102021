@@ -1,6 +1,4 @@
 .hero {
-  $self: &;
-
   padding-block: $spacer-900;
   background-color: $clr-neutral-200;
 
@@ -21,8 +19,8 @@
   }
 
   @include breakpoint('md', 'max') {
-    #{$self}__title,
-    #{$self}__intro-text {
+    &__title,
+    &__intro-text {
       display: flex;
       flex-direction: column;
     }
@@ -30,8 +28,6 @@
 }
 
 .walkthrough {
-  $self: &;
-
   padding-block: $spacer-900;
 
   &__container {
@@ -49,15 +45,13 @@
   }
 
   @include breakpoint('lg') {
-    #{$self}__list {
+    &__list {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 }
 
 .restaurants {
-  $self: &;
-
   padding-block: $spacer-900;
   background-color: $clr-neutral-200;
 
@@ -75,13 +69,13 @@
   }
 
   @include breakpoint('md') {
-    #{$self}__list {
+    &__list {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @include breakpoint('lg') {
-    #{$self}__list {
+    &__list {
       gap: $spacer-700;
     }
   }
