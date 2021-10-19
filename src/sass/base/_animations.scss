@@ -26,3 +26,10 @@
     visibility: hidden;
   }
 }
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+}

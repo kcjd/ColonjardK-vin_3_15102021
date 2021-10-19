@@ -15,10 +15,22 @@
   margin-inline: auto;
 
   @include breakpoint('xl') {
-    max-width: 76vw;
+    max-width: 80vw;
   }
 
   @include breakpoint('xxl') {
-    max-width: 64vw;
+    max-width: 70vw;
+  }
+}
+
+@mixin stagger-animation($start, $end, $gap) {
+  $delay: 0;
+
+  @for $i from $start through $end {
+    $delay: $delay + $gap;
+
+    &--delay-#{$i} {
+      animation-delay: #{$delay}s;
+    }
   }
 }

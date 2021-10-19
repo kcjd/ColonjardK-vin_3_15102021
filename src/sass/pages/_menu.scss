@@ -40,6 +40,12 @@
     @extend %title-tertiary;
   }
 
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-500;
+  }
+
   &__footer {
     display: flex;
     justify-content: center;

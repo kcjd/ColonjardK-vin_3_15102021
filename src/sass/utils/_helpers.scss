@@ -8,6 +8,7 @@
 
   width: $size;
   height: $size;
+  border-radius: $br-100;
   text-align: center;
 }
 
@@ -53,6 +54,12 @@
     height: 4px;
     background-color: $clr-tertiary-400;
   }
+}
+
+%truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .visually-hidden {
