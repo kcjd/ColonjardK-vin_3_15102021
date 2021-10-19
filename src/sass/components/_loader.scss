@@ -1,0 +1,21 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $clr-overlay;
+  perspective: 120px;
+  animation: fade-out 0.2s $ease-in-400 2.8s forwards;
+
+  &__spinner {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: $br-200;
+    animation: spin, color-cycle;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: $ease-in-out-400;
+  }
+}

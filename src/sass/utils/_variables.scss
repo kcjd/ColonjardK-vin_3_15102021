@@ -44,6 +44,8 @@ $clr-neutral-700: hsl(0 0% 49%);
 $clr-neutral-800: hsl(0 0% 21%);
 $clr-neutral-900: hsl(0 0% 6%);
 
+$clr-overlay: hsl(0 0% 100% / 86%);
+
 // Gradients
 $gradient: linear-gradient(175deg, $clr-secondary-400, $clr-primary-400);
 
@@ -54,9 +56,11 @@ $box-shadow-600: 0px 2px 2px hsl(0 0% 40% / 0.2), 0px 4px 4px hsl(0 0% 40% / 0.2
 
 // Border radius
 $br-100: 0.125rem;
+$br-200: 0.5rem;
 $br-400: 1.125rem;
 $br-900: 9999px;
 
 // Easings
 $ease-in-400: cubic-bezier(0.11, 0, 0.5, 0);
 $ease-out-400: cubic-bezier(0.5, 1, 0.89, 1);
+$ease-in-out-400: cubic-bezier(0.45, 0, 0.55, 1);
