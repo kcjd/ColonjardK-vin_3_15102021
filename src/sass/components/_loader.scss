@@ -1,4 +1,9 @@
 .loader {
+  $total-duration: 3s;
+  $reveal-duration: 0.1s;
+  $loader-duration: $total-duration - $reveal-duration;
+  $spinner-duration: $loader-duration - $reveal-duration;
+
   position: fixed;
   inset: 0;
   z-index: 50;
@@ -7,15 +12,18 @@
   align-items: center;
   background-color: $clr-overlay;
   perspective: 120px;
-  animation: fade-out 0.2s $ease-in-400 2.8s forwards;
+  animation: fade-out $reveal-duration $ease-in-400 $total-duration forwards;
+
+  &__wrapper {
+    animation: zoom-in $reveal-duration $ease-out-400 backwards,
+      zoom-out $reveal-duration $loader-duration $ease-in-400 forwards;
+  }
 
   &__spinner {
     width: 3.5rem;
     height: 3.5rem;
-    border-radius: $br-200;
-    animation: spin, color-cycle;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: $ease-in-out-400;
+    border-radius: 50%;
+    background: $gradient;
+    animation: spinner $spinner-duration $reveal-duration $ease-in-out-400;
   }
 }

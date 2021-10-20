@@ -1,22 +1,38 @@
-@keyframes spin {
+@keyframes spinner {
   0% {
     transform: rotateX(0) rotateY(0);
   }
-  50% {
+
+  25% {
     transform: rotateX(-180deg) rotateY(0);
   }
-  100% {
+
+  50% {
     transform: rotateX(-180deg) rotateY(-180deg);
+  }
+
+  75% {
+    transform: rotateX(-360deg) rotateY(-180deg);
+  }
+
+  100% {
+    transform: rotateX(-360deg) rotateY(-360deg);
   }
 }
 
-@keyframes color-cycle {
-  0%,
-  100% {
-    background-color: $clr-primary-400;
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
   }
-  50% {
-    background-color: $clr-secondary-400;
+}
+
+@keyframes zoom-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
   }
 }
 
