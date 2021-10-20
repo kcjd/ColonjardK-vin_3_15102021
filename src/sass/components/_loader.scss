@@ -11,10 +11,10 @@
   justify-content: center;
   align-items: center;
   background-color: $clr-overlay;
-  perspective: 120px;
   animation: fade-out $reveal-duration $ease-in-400 $total-duration forwards;
 
   &__wrapper {
+    perspective: 120px;
     animation: zoom-in $reveal-duration $ease-out-400 backwards,
       zoom-out $reveal-duration $loader-duration $ease-in-400 forwards;
   }
