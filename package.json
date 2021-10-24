@@ -1,7 +1,7 @@
 {
   "name": "ohmyfood",
   "version": "1.0.0",
-  "description": "",
+  "description": "Homepage for Ohmyfood, a foodtech startup based in Paris, France",
   "main": "index.js",
   "scripts": {
     "watch": "sass --watch ./sass/main.scss:./css/style.css",
@@ -9,7 +9,7 @@
     "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/",
     "build": "npm run compile && npm run prefix"
   },
-  "author": "",
+  "author": "Kévin Colonjard",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.7",
