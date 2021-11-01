@@ -28,14 +28,6 @@
   }
 }
 
-@keyframes zoom-out {
-  to {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.5);
-  }
-}
-
 @keyframes fade-out {
   to {
     opacity: 0;

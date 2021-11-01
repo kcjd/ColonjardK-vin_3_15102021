@@ -16,7 +16,7 @@
   &__wrapper {
     perspective: 120px;
     animation: zoom-in $reveal-duration $ease-out-400 backwards,
-      zoom-out $reveal-duration $loader-duration $ease-in-400 forwards;
+      zoom-in $reveal-duration $loader-duration $ease-in-400 reverse forwards;
   }
 
   &__spinner {
