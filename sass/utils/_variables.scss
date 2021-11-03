@@ -6,6 +6,10 @@ $breakpoints: (
   'xxl': 1920px,
 );
 
+// Layout
+$container-width: min(90vw, 75rem);
+$container-padding: calc((100vw - $container-width) / 2);
+
 // Spacing
 $spacer-100: 0.25rem;
 $spacer-200: 0.5rem;

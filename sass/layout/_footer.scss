@@ -1,14 +1,11 @@
 .footer {
-  background-color: $clr-neutral-800;
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: $spacer-500;
   padding-block: $spacer-700;
-
-  &__container {
-    @include container;
-    display: flex;
-    flex-direction: column;
-    gap: $spacer-500;
-    color: $clr-neutral-100;
-  }
+  background-color: $clr-neutral-800;
+  color: $clr-neutral-100;
 
   &__logo {
     font-family: $ff-cursive;
@@ -38,13 +35,10 @@
   }
 
   @include breakpoint('lg') {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding-block: $spacer-800;
-
-    &__container {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
 
     &__nav {
       flex-direction: row;

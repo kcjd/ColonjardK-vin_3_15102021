@@ -19,29 +19,33 @@
   </head>
 
   <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="header__brand">
-        <div class="header__brand-container">
+    <!-- PAGE CONTAINER -->
+    <div class="page-container">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__brand">
           <h1 class="header__logo">ohmyfood</h1>
         </div>
-      </div>
 
-      <form class="header__search">
-        <label for="search-input">
-          <span class="visually-hidden">Localisation</span>
-          <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-        </label>
-        <input type="search" id="search-input" placeholder="Paris, Belleville" class="header__search-input" />
-      </form>
-    </header>
-    <!-- HEADER -->
+        <form class="header__search">
+          <label for="search-input">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          </label>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Paris, Belleville"
+            class="header__search-input"
+            aria-label="localisation"
+          />
+        </form>
+      </header>
+      <!-- HEADER -->
 
-    <!-- MAIN CONTENT -->
-    <main class="main-content">
-      <!-- HERO -->
-      <section class="hero">
-        <div class="hero__container">
+      <!-- MAIN -->
+      <main>
+        <!-- HERO -->
+        <section class="hero">
           <h2 class="hero__title">
             <span>Réservez le menu qui</span>
             <span>vous convient</span>
@@ -51,13 +55,11 @@
             <span>sélectionnés par nos soins.</span>
           </p>
           <a href="#restaurants" class="primary-button">Explorer nos restaurants</a>
-        </div>
-      </section>
-      <!-- HERO -->
+        </section>
+        <!-- HERO -->
 
-      <!-- WALKTHROUGH -->
-      <section class="walkthrough">
-        <div class="walkthrough__container">
+        <!-- WALKTHROUGH -->
+        <section class="walkthrough">
           <h3 class="walkthrough__title">Fonctionnement</h3>
 
           <ol class="walkthrough__list">
@@ -76,13 +78,11 @@
               <span>Dégustez au restaurant</span>
             </li>
           </ol>
-        </div>
-      </section>
-      <!-- WALKTHROUGH -->
+        </section>
+        <!-- WALKTHROUGH -->
 
-      <!-- RESTAURANTS -->
-      <section class="restaurants" id="restaurants">
-        <div class="restaurants__container">
+        <!-- RESTAURANTS -->
+        <section class="restaurants" id="restaurants">
           <h3 class="restaurants__title">Restaurants</h3>
 
           <!-- RESTAURANTS LIST -->
@@ -210,15 +210,13 @@
             </article>
           </div>
           <!-- RESTAURANTS LIST -->
-        </div>
-      </section>
-      <!-- RESTAURANTS -->
-    </main>
-    <!-- MAIN CONTENT -->
+        </section>
+        <!-- RESTAURANTS -->
+      </main>
+      <!-- MAIN -->
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__container">
+      <!-- FOOTER -->
+      <footer class="footer">
         <span class="footer__logo">ohmyfood</span>
 
         <nav class="footer__nav" aria-label="principale">
@@ -233,9 +231,10 @@
           <a href="#" class="footer__link">Mentions légales</a>
           <a href="mailto:contact@ohmyfood.fr" class="footer__link">Contact</a>
         </nav>
-      </div>
-    </footer>
-    <!-- FOOTER -->
+      </footer>
+      <!-- FOOTER -->
+    </div>
+    <!-- PAGE CONTAINER -->
 
     <!-- LOADER -->
     <div class="loader">

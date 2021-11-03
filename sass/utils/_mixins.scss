@@ -10,16 +10,12 @@
   }
 }
 
-@mixin container {
-  max-width: 90vw;
-  margin-inline: auto;
-
-  @include breakpoint('xl') {
-    max-width: 80vw;
-  }
-
-  @include breakpoint('xxl') {
-    max-width: 70vw;
+@mixin container($type: 'full-width') {
+  @if $type == 'full-width' {
+    padding-inline: $container-padding;
+  } @else if $type == 'max-width' {
+    width: $container-width;
+    margin-inline: auto;
   }
 }
 

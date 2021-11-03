@@ -7,17 +7,13 @@
 .menu {
   $border-radius: $br-700;
 
+  @include container;
   position: relative;
-  z-index: 1;
   margin-top: -$border-radius;
   padding-block: $spacer-700;
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
   background-color: $clr-neutral-200;
-
-  &__container {
-    @include container;
-  }
 
   &__header {
     display: flex;
@@ -36,17 +32,7 @@
     grid-auto-columns: minmax(0, 1fr);
   }
 
-  &__subtitle {
-    @extend %title-tertiary;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: $spacer-500;
-  }
-
-  &__footer {
+  &__cta {
     display: flex;
     justify-content: center;
     padding-top: $spacer-800;
@@ -54,11 +40,23 @@
   }
 
   @include breakpoint('lg') {
-    @include container;
+    @include container('max-width');
     padding: $spacer-800;
 
     &__content {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+  }
+}
+
+.menu-group {
+  &__title {
+    @extend %title-tertiary;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-500;
   }
 }

@@ -7,9 +7,8 @@
   position: fixed;
   inset: 0;
   z-index: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   background-color: $clr-overlay;
   animation: fade-out $reveal-duration $ease-in-400 $total-duration forwards;
 
