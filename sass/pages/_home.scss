@@ -1,21 +1,21 @@
 .hero {
   @include container;
-  padding-block: $spacer-900;
-  background-color: $clr-neutral-200;
+  padding-block: map-get($spacers, 900);
+  background-color: get-color(neutral, 200);
   text-align: center;
 
   &__title {
     @extend %title-primary;
-    margin-bottom: $spacer-500;
+    margin-bottom: map-get($spacers, 500);
   }
 
   &__intro-text {
-    color: $clr-neutral-800;
-    font-size: $fs-500;
-    margin-bottom: $spacer-700;
+    color: get-color(neutral, 800);
+    font-size: map-get($font-sizes, 500);
+    margin-bottom: map-get($spacers, 700);
   }
 
-  @include breakpoint('md', 'max') {
+  @include breakpoint(md, 'max') {
     &__title,
     &__intro-text {
       display: flex;
@@ -26,7 +26,7 @@
 
 .walkthrough {
   @include container;
-  padding-block: $spacer-900;
+  padding-block: map-get($spacers, 900);
 
   &__title {
     @extend %title-primary;
@@ -34,11 +34,11 @@
 
   &__list {
     display: grid;
-    gap: $spacer-600;
+    gap: map-get($spacers, 600);
     counter-reset: walkthrough;
   }
 
-  @include breakpoint('lg') {
+  @include breakpoint(lg) {
     &__list {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -47,8 +47,8 @@
 
 .restaurants {
   @include container;
-  padding-block: $spacer-900;
-  background-color: $clr-neutral-200;
+  padding-block: map-get($spacers, 900);
+  background-color: get-color(neutral, 200);
 
   &__title {
     @extend %title-primary;
@@ -57,18 +57,18 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: $spacer-600;
+    gap: map-get($spacers, 600);
   }
 
-  @include breakpoint('md') {
+  @include breakpoint(md) {
     &__list {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
-  @include breakpoint('lg') {
+  @include breakpoint(lg) {
     &__list {
-      gap: $spacer-700;
+      gap: map-get($spacers, 700);
     }
   }
 }

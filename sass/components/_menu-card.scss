@@ -6,12 +6,12 @@
   overflow: hidden;
   cursor: pointer;
   @include stagger-animation(1, 9, 0.12);
-  animation: slide-in 0.4s $ease-out-400 backwards;
+  animation: slide-in 0.4s map-get($easings, ease-out) backwards;
 
   &__body {
     flex: 1;
     min-width: 0;
-    padding: $spacer-500;
+    padding: map-get($spacers, 500);
   }
 
   &__title,
@@ -26,12 +26,12 @@
   &__info {
     display: flex;
     align-items: center;
-    gap: $spacer-400;
+    gap: map-get($spacers, 400);
   }
 
   &__desc {
     flex: 1;
-    font-size: $fs-300;
+    font-size: map-get($font-sizes, 300);
   }
 
   &__price {
@@ -44,25 +44,25 @@
     align-items: center;
     width: 4.5rem;
     margin-right: -4.5rem;
-    background-color: $clr-tertiary-400;
-    color: $clr-neutral-100;
-    font-size: $fs-700;
-    transition: margin 0.3s $ease-in-400;
+    background-color: get-color(tertiary, 400);
+    color: get-color(neutral, 100);
+    font-size: map-get($font-sizes, 700);
+    transition: margin 0.3s map-get($easings, ease-in);
   }
 
   &__slider-icon {
-    transition: transform 0.2s 0.1s $ease-in-400;
+    transition: transform 0.2s 0.1s map-get($easings, ease-in);
   }
 
   &:hover {
     #{$self}__slider {
       margin-right: 0;
-      transition-timing-function: $ease-out-400;
+      transition-timing-function: map-get($easings, ease-out);
     }
 
     #{$self}__slider-icon {
       transform: rotate(360deg);
-      transition-timing-function: $ease-out-400;
+      transition-timing-function: map-get($easings, ease-out);
     }
   }
 }

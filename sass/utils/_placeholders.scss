@@ -8,40 +8,40 @@
 
   width: $size;
   height: $size;
-  border-radius: $br-100;
+  border-radius: map-get($border-radiuses, 100);
   text-align: center;
 }
 
 %card {
   display: block;
-  border-radius: $br-400;
-  background-color: $clr-neutral-100;
-  box-shadow: $box-shadow-400;
+  border-radius: map-get($border-radiuses, 400);
+  background-color: get-color(neutral, 100);
+  box-shadow: map-get($shadows, 400);
 }
 
 %card-title {
-  margin-bottom: $spacer-100;
-  font-size: $fs-500;
+  margin-bottom: map-get($spacers, 100);
+  font-size: map-get($font-sizes, 500);
   font-weight: 500;
 }
 
 %title-primary {
-  margin-bottom: $spacer-700;
-  font-size: $fs-700;
+  margin-bottom: map-get($spacers, 700);
+  font-size: map-get($font-sizes, 700);
   font-weight: 700;
 }
 
 %title-secondary {
-  font-family: $ff-cursive;
-  font-size: $fs-800;
+  font-family: map-get($font-families, cursive);
+  font-size: map-get($font-sizes, 800);
   font-weight: 400;
 }
 
 %title-tertiary {
   position: relative;
-  margin-bottom: $spacer-700;
-  color: $clr-neutral-800;
-  font-size: $fs-500;
+  margin-bottom: map-get($spacers, 700);
+  color: get-color(neutral, 800);
+  font-size: map-get($font-sizes, 500);
   font-weight: 300;
   text-transform: uppercase;
 
@@ -49,10 +49,10 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -$spacer-200;
+    bottom: -1 * map-get($spacers, 200);
     width: 2.5em;
     height: 4px;
-    background-color: $clr-tertiary-400;
+    background-color: get-color(tertiary, 400);
   }
 }
 

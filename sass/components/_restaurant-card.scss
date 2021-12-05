@@ -19,13 +19,13 @@
 
   &__badge {
     position: absolute;
-    top: $spacer-400;
-    right: $spacer-400;
-    padding: $spacer-200 $spacer-400;
-    border-radius: $br-100;
-    background-color: $clr-tertiary-400;
-    color: $clr-tertiary-500;
-    font-size: $fs-300;
+    top: map-get($spacers, 400);
+    right: map-get($spacers, 400);
+    padding: map-get($spacers, 200) map-get($spacers, 400);
+    border-radius: map-get($border-radiuses, 100);
+    background-color: get-color(tertiary, 400);
+    color: get-color(tertiary, 500);
+    font-size: map-get($font-sizes, 300);
     font-weight: 500;
   }
 
@@ -33,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: $spacer-400;
+    padding: map-get($spacers, 400);
   }
 
   &__title {

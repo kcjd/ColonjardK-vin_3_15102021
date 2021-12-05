@@ -3,18 +3,18 @@
 
   @extend %icon-button;
   position: relative;
-  font-size: $fs-700;
+  font-size: map-get($font-sizes, 700);
 
   &__icon {
     position: absolute;
     inset: 0.125em;
-    color: $clr-neutral-800;
+    color: get-color(neutral, 800);
     transition: clip-path 0.35s, opacity 0.35s, transform 0.35s;
-    transition-timing-function: $ease-in-400;
+    transition-timing-function: map-get($easings, ease-in);
   }
 
   &__icon--checked {
-    background: $gradient;
+    background: map-get($gradients, primary);
     background-clip: text;
     color: transparent;
     opacity: 0;
@@ -24,7 +24,7 @@
 
   &:hover {
     #{$self}__icon {
-      transition-timing-function: $ease-out-400;
+      transition-timing-function: map-get($easings, ease-out);
     }
 
     #{$self}__icon--unchecked {

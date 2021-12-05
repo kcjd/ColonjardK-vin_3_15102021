@@ -2,10 +2,10 @@
   position: relative;
   isolation: isolate;
   display: inline-block;
-  padding: $spacer-400 $spacer-700;
-  border-radius: $br-900;
-  background-color: $clr-primary-400;
-  color: $clr-neutral-100;
+  padding: map-get($spacers, 400) map-get($spacers, 700);
+  border-radius: map-get($border-radiuses, 900);
+  background-color: get-color(primary, 400);
+  color: get-color(neutral, 100);
   font-weight: 500;
 
   &::before,
@@ -18,12 +18,12 @@
   }
 
   &::before {
-    background-image: $gradient;
+    background-image: map-get($gradients, primary);
     transition: filter 0.25s;
   }
 
   &::after {
-    box-shadow: $box-shadow-600;
+    box-shadow: map-get($shadows, 600);
     opacity: 0.6;
     transition: opacity 0.25s;
   }

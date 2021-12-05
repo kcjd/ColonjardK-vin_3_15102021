@@ -4,8 +4,8 @@
     position: relative;
     display: flex;
     justify-content: center;
-    padding-block: $spacer-300;
-    box-shadow: $box-shadow-200;
+    padding-block: map-get($spacers, 300);
+    box-shadow: map-get($shadows, 200);
   }
 
   &__button {
@@ -13,14 +13,14 @@
     position: absolute;
     top: 50%;
     left: $container-padding;
-    color: $clr-neutral-800;
-    font-size: $fs-600;
+    color: get-color(neutral, 800);
+    font-size: map-get($font-sizes, 600);
     transform: translateY(-50%);
   }
 
   &__logo {
-    font-family: $ff-cursive;
-    font-size: $fs-900;
+    font-family: map-get($font-families, cursive);
+    font-size: map-get($font-sizes, 900);
     font-weight: 400;
   }
 
@@ -28,14 +28,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: $spacer-500;
-    background-color: $clr-neutral-300;
-    color: $clr-neutral-800;
+    gap: map-get($spacers, 500);
+    background-color: get-color(neutral, 300);
+    color: get-color(neutral, 800);
     font-weight: 500;
   }
 
   &__search-input {
     width: 8em;
-    padding-block: $spacer-500;
+    padding-block: map-get($spacers, 500);
   }
 }

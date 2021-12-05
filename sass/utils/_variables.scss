@@ -1,74 +1,93 @@
-// Breakpoints
-$breakpoints: (
-  'md': 768px,
-  'lg': 1024px,
-);
-
-// Layout
 $container-width: min(90vw, 75rem);
 $container-padding: calc((100vw - $container-width) / 2);
 
-// Spacing
-$spacer-100: 0.25rem;
-$spacer-200: 0.5rem;
-$spacer-300: 0.75rem;
-$spacer-400: 1rem;
-$spacer-500: 1.125rem;
-$spacer-600: 1.5rem;
-$spacer-700: 2rem;
-$spacer-800: 3rem;
-$spacer-900: 4rem;
+$breakpoints: (
+  md: 768px,
+  lg: 1024px,
+);
 
-// Typography
-$ff-sans: 'Roboto', sans-serif;
-$ff-cursive: 'Shrikhand', cursive;
+$spacers: (
+  100: 0.25rem,
+  200: 0.5rem,
+  300: 0.75rem,
+  400: 1rem,
+  500: 1.125rem,
+  600: 1.5rem,
+  700: 2rem,
+  800: 3rem,
+  900: 4rem,
+);
 
-$fs-200: 0.75rem;
-$fs-300: 0.875rem;
-$fs-400: 1rem;
-$fs-500: 1.125rem;
-$fs-600: 1.25rem;
-$fs-700: 1.5rem;
-$fs-800: 1.75rem;
-$fs-900: 2rem;
+$font-families: (
+  sans: 'Roboto',
+  cursive: 'Shrikhand',
+);
 
-// Colors
-$clr-primary-100: hsl(267 100% 96%);
-$clr-primary-400: hsl(267 66% 60%);
+$font-sizes: (
+  200: 0.75rem,
+  300: 0.875rem,
+  400: 1rem,
+  500: 1.125rem,
+  600: 1.25rem,
+  700: 1.5rem,
+  800: 1.75rem,
+  900: 2rem,
+);
 
-$clr-secondary-400: hsl(317 100% 74%);
+$colors: (
+  primary: (
+    100: hsl(267 100% 96%),
+    400: hsl(267 66% 60%),
+  ),
+  secondary: (
+    400: hsl(317 100% 74%),
+  ),
+  tertiary: (
+    400: hsl(165 56% 74%),
+    500: hsl(165 100% 20%),
+  ),
+  neutral: (
+    100: hsl(0 0% 100%),
+    200: hsl(0 0% 97%),
+    300: hsl(0 0% 93%),
+    700: hsl(0 0% 49%),
+    800: hsl(0 0% 21%),
+    900: hsl(0 0% 6%),
+  ),
+);
 
-$clr-tertiary-400: hsl(165 56% 74%);
-$clr-tertiary-500: hsl(165 100% 20%);
+$gradients: (
+  primary: linear-gradient(175deg, hsl(317 100% 74%), hsl(267 66% 60%)),
+);
 
-$clr-neutral-100: hsl(0 0% 100%);
-$clr-neutral-200: hsl(0 0% 97%);
-$clr-neutral-300: hsl(0 0% 93%);
-$clr-neutral-700: hsl(0 0% 49%);
-$clr-neutral-800: hsl(0 0% 21%);
-$clr-neutral-900: hsl(0 0% 6%);
+$shadows: (
+  200: (
+    0px 1px 1px hsl(0 0% 40% / 0.075),
+    0px 2px 2px hsl(0 0% 40% / 0.075),
+    0px 4px 4px hsl(0 0% 40% / 0.075),
+  ),
+  400: (
+    0px 2px 2px hsl(0 0% 40% / 0.075),
+    0px 4px 4px hsl(0 0% 40% / 0.075),
+    0px 8px 8px hsl(0 0% 40% / 0.075),
+  ),
+  600: (
+    0px 2px 2px hsl(0 0% 40% / 0.2),
+    0px 4px 4px hsl(0 0% 40% / 0.2),
+    0px 8px 8px hsl(0 0% 40% / 0.2),
+  ),
+);
 
-$clr-overlay: hsl(0 0% 100% / 94%);
+$border-radiuses: (
+  100: 0.125rem,
+  200: 0.5rem,
+  400: 1.125rem,
+  700: 1.5rem,
+  900: 9999px,
+);
 
-// Gradients
-$gradient: linear-gradient(175deg, $clr-secondary-400, $clr-primary-400);
-
-// Shadows
-$box-shadow-200: 0px 1px 1px hsl(0 0% 40% / 0.075), 0px 2px 2px hsl(0 0% 40% / 0.075),
-  0px 4px 4px hsl(0 0% 40% / 0.075);
-$box-shadow-400: 0px 2px 2px hsl(0 0% 40% / 0.075), 0px 4px 4px hsl(0 0% 40% / 0.075),
-  0px 8px 8px hsl(0 0% 40% / 0.075);
-$box-shadow-600: 0px 2px 2px hsl(0 0% 40% / 0.2), 0px 4px 4px hsl(0 0% 40% / 0.2),
-  0px 8px 8px hsl(0 0% 40% / 0.2);
-
-// Border radius
-$br-100: 0.125rem;
-$br-200: 0.5rem;
-$br-400: 1.125rem;
-$br-700: 1.5rem;
-$br-900: 9999px;
-
-// Easings
-$ease-in-400: cubic-bezier(0.11, 0, 0.5, 0);
-$ease-out-400: cubic-bezier(0.5, 1, 0.89, 1);
-$ease-in-out-400: cubic-bezier(0.45, 0, 0.55, 1);
+$easings: (
+  ease-in: cubic-bezier(0.11, 0, 0.5, 0),
+  ease-out: cubic-bezier(0.5, 1, 0.89, 1),
+  ease-in-out: cubic-bezier(0.45, 0, 0.55, 1),
+);

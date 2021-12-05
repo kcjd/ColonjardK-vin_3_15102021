@@ -5,21 +5,21 @@
 }
 
 .menu {
-  $border-radius: $br-700;
+  $border-radius: map-get($border-radiuses, 700);
 
   @include container;
   position: relative;
   margin-top: -$border-radius;
-  padding-block: $spacer-700;
+  padding-block: map-get($spacers, 700);
   border-top-left-radius: $border-radius;
   border-top-right-radius: $border-radius;
-  background-color: $clr-neutral-200;
+  background-color: get-color(neutral, 200);
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: $spacer-700;
+    padding-bottom: map-get($spacers, 700);
   }
 
   &__title {
@@ -28,20 +28,20 @@
 
   &__content {
     display: grid;
-    gap: $spacer-700 $spacer-600;
+    gap: map-get($spacers, 700) map-get($spacers, 600);
     grid-auto-columns: minmax(0, 1fr);
   }
 
   &__cta {
     display: flex;
     justify-content: center;
-    padding-top: $spacer-800;
-    padding-bottom: $spacer-400;
+    padding-top: map-get($spacers, 800);
+    padding-bottom: map-get($spacers, 400);
   }
 
-  @include breakpoint('lg') {
+  @include breakpoint(lg) {
     @include container('max-width');
-    padding: $spacer-800;
+    padding: map-get($spacers, 800);
 
     &__content {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -57,6 +57,6 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: $spacer-500;
+    gap: map-get($spacers, 500);
   }
 }

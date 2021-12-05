@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 body {
-  color: $clr-neutral-900;
-  font-family: $ff-sans;
-  font-size: $fs-400;
+  color: get-color(neutral, 900);
+  font-family: map-get($font-families, sans);
+  font-size: map-get($font-sizes, 400);
   font-weight: 300;
 }

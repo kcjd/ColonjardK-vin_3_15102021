@@ -9,20 +9,20 @@
   z-index: 50;
   display: grid;
   place-items: center;
-  background-color: $clr-overlay;
-  animation: fade-out $reveal-duration $ease-in-400 $total-duration forwards;
+  background-color: transparentize(get-color(neutral, 100), 0.06);
+  animation: fade-out $reveal-duration map-get($easings, ease-in) $total-duration forwards;
 
   &__wrapper {
     perspective: 120px;
-    animation: zoom-in $reveal-duration $ease-out-400 backwards,
-      zoom-in $reveal-duration $loader-duration $ease-in-400 reverse forwards;
+    animation: zoom-in $reveal-duration map-get($easings, ease-out) backwards,
+      zoom-in $reveal-duration $loader-duration map-get($easings, ease-in) reverse forwards;
   }
 
   &__spinner {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
-    background: $gradient;
-    animation: spinner $spinner-duration $reveal-duration $ease-in-out-400;
+    background: map-get($gradients, primary);
+    animation: spinner $spinner-duration $reveal-duration map-get($easings, ease-in-out);
   }
 }

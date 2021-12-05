@@ -46,6 +46,6 @@ input::placeholder {
 }
 
 :focus-visible {
-  outline: 2px solid $clr-primary-400;
+  outline: 2px solid get-color(primary, 400);
   outline-offset: 1px;
 }

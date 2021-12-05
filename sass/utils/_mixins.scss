@@ -1,19 +1,19 @@
-@mixin breakpoint($breakpoint, $direction: 'min') {
-  @if $direction == 'max' {
+@mixin breakpoint($breakpoint, $direction: min) {
+  @if $direction == max {
     @media (max-width: map-get($breakpoints, $breakpoint) - 1) {
       @content;
     }
-  } @else if $direction == 'min' {
+  } @else if $direction == min {
     @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
   }
 }
 
-@mixin container($type: 'full-width') {
-  @if $type == 'full-width' {
+@mixin container($type: full-width) {
+  @if $type == full-width {
     padding-inline: $container-padding;
-  } @else if $type == 'max-width' {
+  } @else if $type == max-width {
     width: $container-width;
     margin-inline: auto;
   }
