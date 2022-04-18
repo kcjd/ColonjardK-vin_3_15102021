@@ -1,15 +1,17 @@
 # Ohmyfood
 
-Projet OpenClassrooms. L'objectif est de développer un site web avec des animations CSS, à partir d'une maquette mobile.
+Site web responsive réalisé pour Ohmyfood, une startup qui permet de réserver des plats gastronomiques en ligne.
 
-## Spécifications techniques
+👉 https://kcjd.github.io/ohmyfood
 
-- Le développement doit se faire en HTML et (S)CSS, sans JavaScript ni framework.
+## Détails
 
-- Le code doit être versionné sur GitHub.
+- Intégration des pages à partir d'une maquette
 
-- Le site doit être responsive sur mobile, tablette et desktop (mobile-first).
+- Développé avec HTML et Sass
 
-- Les pages doivent passer la validation W3C.
+- Animations CSS
 
-- Le site doit être compatible avec les dernières versions de Chrome et Firefox.
+- Design responsive (mobile-first)
+
+- Valide W3C
